@@ -1,7 +1,8 @@
 <template>
   <div>
-    <div class="text-green-300">hello world</div>
-    <Button class="active:scale-95" @click="hi">Hello</Button>
+    <Input></Input>
+    <div class="text-orange-500">hello world</div>
+    <Button class="active:scale-95" @click="hi">这是一个测试按钮哦~</Button>
     <Input v-model="obj.name"></Input>
     <div>{{ obj.name }}</div>
   </div>
