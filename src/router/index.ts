@@ -5,14 +5,14 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      redirect: '/home'
+      redirect: '/home',
     },
     {
       path: '/home',
       name: 'home',
-      component: () => import('@/views/home/home-index.vue')
-    }
-  ]
+      component: () => import('@/views/home/home-index.vue'),
+    },
+  ],
 })
 
 export default router

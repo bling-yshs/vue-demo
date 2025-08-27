@@ -8,20 +8,24 @@
 </template>
 
 <script setup lang="ts">
-import { Button } from '@/components/ui/button'
-import { Input } from '@/components/ui/input'
 import { ref } from 'vue'
+// biome-ignore lint/correctness/noUnusedImports: a
+import { Button } from '@/components/ui/button'
+// biome-ignore lint/correctness/noUnusedImports: a
+import { Input } from '@/components/ui/input'
 
 interface Obj {
   id: string
   name: string
 }
 
-const obj = ref<Obj>({ id: '', name: '' })
+const _obj = ref<Obj>({ id: '', name: '' })
 
-async function hi() {
-  let response = await fetch('\n' +
-    'https://api.vc.bilibili.com/link_setting/v1/link_setting/get?build=0&mobi_app=web&msg_notify=1&show_unfollowed_msg=1&web_location=333.1007')
-  console.log((await response.text()))
+async function _hi() {
+  let response = await fetch(
+    '\n' +
+      'https://api.vc.bilibili.com/link_setting/v1/link_setting/get?build=0&mobi_app=web&msg_notify=1&show_unfollowed_msg=1&web_location=333.1007',
+  )
+  console.log(await response.text())
 }
 </script>
