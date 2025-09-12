@@ -39,5 +39,32 @@
       "quoteStyle": "single",
       "semicolons": "asNeeded"
     }
-  }
+  },
+  "overrides": [
+    {
+      "includes": ["**/*.vue"],
+      "javascript": {
+        "globals": [
+          "defineProps",
+          "defineEmits",
+          "defineExpose",
+          "withDefaults",
+          "defineSlots",
+          "defineModel"
+        ]
+      },
+      "linter": {
+        "rules": {
+          "style": {
+            "useConst": "off",
+            "useImportType": "off"
+          },
+          "correctness": {
+            "noUnusedVariables": "off",
+            "noUnusedImports": "off"
+          }
+        }
+      }
+    }
+  ]
 }
