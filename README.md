@@ -4,10 +4,6 @@ type: "always_apply"
 
 # 总体架构
 
-- Vue3 前端项目
-
-## 前端框架
-
 - 使用 vue3
 - 使用 typescript
 - 使用 pnpm 包管理器，任何 npm 命令都要换成 pnpm 命令
