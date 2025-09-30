@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="text-orange-500">hello world</div>
-    <Button class="active:scale-95" @click="hi">这是一个测试按钮哦~</Button>
+    <Button class="active:scale-95" @click="hello">这是一个测试按钮哦~</Button>
     <Input v-model="inp"></Input>
   </div>
 </template>
@@ -13,8 +13,10 @@ const inp = ref('')
 
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
+import { Hello } from '@/entity/Hello.ts'
 
-async function hi() {
+async function hello() {
   console.log('ok')
 }
+
 </script>
