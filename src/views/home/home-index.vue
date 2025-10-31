@@ -16,7 +16,8 @@ import { Input } from '@/components/ui/input'
 import { Hello } from '@/entity/Hello.ts'
 
 async function hello() {
-  console.log('ok')
+  let hello = new Hello('abc')
+  console.log(hello.s)
 }
 
 </script>

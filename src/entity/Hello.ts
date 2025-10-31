@@ -1,7 +1,15 @@
 export class Hello {
-  private s: string
-  
+  private _s: string
+
+  get s(): string {
+    return this._s
+  }
+
+  set s(value: string) {
+    this._s = value
+  }
+
   constructor(s: string) {
-    this.s = s
+    this._s = s
   }
 }

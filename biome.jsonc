@@ -1,5 +1,8 @@
 {
-  "$schema": "https://biomejs.dev/schemas/2.2.2/schema.json",
+  "$schema": "https://biomejs.dev/schemas/2.3.2/schema.json",
+  "html": {
+    "experimentalFullSupportEnabled": true
+  },
   "vcs": {
     "enabled": false,
     "clientKind": "git",
@@ -44,14 +47,7 @@
     {
       "includes": ["**/*.vue"],
       "javascript": {
-        "globals": [
-          "defineProps",
-          "defineEmits",
-          "defineExpose",
-          "withDefaults",
-          "defineSlots",
-          "defineModel"
-        ]
+        "globals": ["defineProps", "defineEmits", "defineExpose", "withDefaults", "defineSlots", "defineModel"]
       },
       "linter": {
         "rules": {
