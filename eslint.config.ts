@@ -29,4 +29,7 @@ export default antfu({
     'src/components/**',
     'src/lib/**',
   ],
+  rules: {
+    'no-console': 'off',
+  },
 })
