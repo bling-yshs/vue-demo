@@ -15,7 +15,7 @@ import { ref } from 'vue'
 
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
-import { Hello } from '@/entity/Hello.ts'
+import { Hello } from '@/entity/hello.ts'
 
 const inp = ref('')
 
